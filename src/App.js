@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import TweetForm from "./components/TweetForm";
 import TweetList from "./components/TweetList";
 import TokenInfo from "./components/TokenInfo";
+import AllTweets from "./components/AllTweets";
 import { config } from "./config";
 import ProfileABI from "./abis/Profile.json";
 import "bulma/css/bulma.min.css";
@@ -61,6 +62,11 @@ function App() {
         {account && (
           <>
             <TokenInfo provider={provider} account={account} />
+
+            <div class="box">
+              <AllTweets signer={signer} />
+            </div>
+
             {!isRegistered ? (
               <RegistrationForm
                 signer={signer}
