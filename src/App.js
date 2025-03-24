@@ -63,7 +63,7 @@ function App() {
           <>
             <TokenInfo provider={provider} account={account} />
 
-            <div class="box">
+            <div className="box">
               <AllTweets signer={signer} />
             </div>
 
