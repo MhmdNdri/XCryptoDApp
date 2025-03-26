@@ -58,6 +58,7 @@ function App() {
           setSigner={setSigner}
           setAccount={setAccount}
           setEthBalance={setEthBalance}
+          account={account}
         />
         {account && (
           <>
